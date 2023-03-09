@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./_popover.scss";
+@import "./_dropdown.scss";
+@import "./_transitions.scss";
+@import "./_card.scss";
+
+html,
+body,
+div#app {
+  @apply h-full;
+}
+
+:root {
+  --baseBorderRadius: 3px;
+  --fontSize3Xs: 11px;
+}
+
+* {
+  @apply outline-none;
+}
+
+a {
+  @apply text-black text-xs transition-colors duration-75 select-none;
+}
+
+a:hover,
+a:focus {
+  @apply text-neutral-900;
+}
+
+.animate-spin-slow {
+  transform: rotateZ(0deg);
+  animation: spinSlow 1s linear infinite;
+}
+
+@keyframes spinSlow {
+  to {
+    transform: rotateZ(360deg);
+  }
+}

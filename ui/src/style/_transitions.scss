@@ -1,0 +1,30 @@
+/* SLIDE Y */
+.slide-y-enter-active {
+  transition: all .1s ease-in-out;
+}
+
+.slide-y-leave-active {
+  transition: all .1s ease-in-out;
+}
+
+.slide-y-enter-from,
+.slide-y-leave-to {
+  transform: translateY(-5px);
+  opacity: 0;
+}
+
+/* SLIDE X */
+
+.slide-x-enter-active {
+  transition: all .1s ease-in-out;
+}
+
+.slide-x-leave-active {
+  transition: all .1s ease-in-out;
+}
+
+.slide-x-enter-from,
+.slide-x-leave-to {
+  transform: translateX(-5px);
+  opacity: 0;
+}

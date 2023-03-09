@@ -1,0 +1,5 @@
+div.dropdown {
+  position: absolute;
+  bottom: calc(100% + .5rem);
+  @apply bg-white shadow w-max p-2 rounded;
+}
