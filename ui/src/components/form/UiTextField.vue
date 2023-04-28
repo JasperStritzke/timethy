@@ -1,7 +1,7 @@
 <template>
   <UiField v-bind:v-model="computedVal" v-bind="props" v-bind:field-id="id">
     <input
-        v-bind:v-model="computedVal"
+        v-model="computedVal"
         v-bind:id="`field-${id}`"
         v-bind:type="type"
         v-bind:disabled="disabled"
@@ -18,7 +18,7 @@ import {UiFieldRules} from "./form.util";
 type Props = {
   type?: "text" | "password" | "number" | "color" | "date" | "time" | "email",
   label: string,
-  modelValue: any,
+  modelValue: string | boolean | number,
   rules?: UiFieldRules,
   required?: boolean,
   disabled?: boolean,

@@ -30,7 +30,7 @@ function login(e: any) {
       })
 }
 
-const email = ref("jasper@stritzke.info")
+const email = ref("")
 const password = ref("")
 
 const emailRules = ref([
@@ -51,7 +51,7 @@ const passwordRules = ref([
     <form class="flex flex-col gap-5 w-96" @submit.prevent="login">
       <UiTextField label="E-Mail" required type="email" v-model="email" :rules="emailRules"/>
       <UiTextField label="Password" required type="password" v-model="password" :rules="passwordRules"/>
-      <a href="#" class="-mt-4">Forgotten password?</a>
+      <a href="#/login" class="-mt-4">Forgotten password?</a>
 
       <UiButton class="flex-grow animate-icon btn-black btn-block" :loading="loading" type="submit">
         <span class="txt">Login</span>
